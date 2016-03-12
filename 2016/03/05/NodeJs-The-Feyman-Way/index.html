@@ -17,7 +17,7 @@ Its an open-source, cross-pl">
 1. Concept
 NodeJS is a software platform which can run programs written in javascript. 
 Its an open-source, cross-pl">
-<meta property="og:updated_time" content="2016-03-06T04:49:56.000Z">
+<meta property="og:updated_time" content="2016-03-12T00:04:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Understand the basics of NodeJs The Feynman Way">
 <meta name="twitter:description" content="Understand the basics of NodeJS using the Feynman Technique(Whats that? Read here).
@@ -138,7 +138,7 @@ ga('send', 'pageview');
 <li>NodeJS uses asynchronous programming and has an evented I/O model.</li>
 <li>It is singlethreaded and lock free. This is what makes it really fast.</li>
 </ul>
-<h3 id="2-Explain-Like-I’m-5"><a href="#2-Explain-Like-I’m-5" class="headerlink" title="2. Explain Like I’m 5"></a>2. Explain Like I’m 5</h3><h5 id="Uses-Asynchronous-Programming"><a href="#Uses-Asynchronous-Programming" class="headerlink" title="Uses Asynchronous Programming"></a>Uses Asynchronous Programming</h5><p>An incoming request to a NodeJS server will trigger a Javascript function. Let’s call this an ‘event’ function. The event function does a little bit of work and in turn triggers other (asynchronous) tasks . These other tasks could be connecting to a database or pulling content from another server. </p>
+<h3 id="2-Explain-Like-I’m-5"><a href="#2-Explain-Like-I’m-5" class="headerlink" title="2. Explain Like I’m 5"></a>2. Explain Like I’m 5</h3><h4 id="NodeJS-Asynchronous-Programming"><a href="#NodeJS-Asynchronous-Programming" class="headerlink" title="NodeJS Asynchronous Programming"></a>NodeJS Asynchronous Programming</h4><p>An incoming request to a NodeJS server will trigger a Javascript function. Let’s call this an ‘event’ function. The event function does a little bit of work and in turn triggers other (asynchronous) tasks . These other tasks could be connecting to a database or pulling content from another server. </p>
 <p>Once these tasks have been kicked off, lets call them ‘Task A’ and ‘Task B’, the original ‘event’ function finishes and Node.js goes back to sleep. When ‘Task A’ or ‘Task B’ are completed, they get back with a response to our NodeJS application and that triggers another ‘event’ function or a callback function. </p>
 <p>So to sum it up, NodeJs responds to a event, does some processing  and triggers other events. In the meantime it is free to respond to other incoming events. This is why Node.js does such a great job managing thousands of simultaneous connections.</p>
 <h3 id="3-Pinpointing-Bridge-the-knowledge-gap"><a href="#3-Pinpointing-Bridge-the-knowledge-gap" class="headerlink" title="3. Pinpointing (Bridge the knowledge gap)"></a>3. Pinpointing (Bridge the knowledge gap)</h3><p>What does it mean that NodeJS has an evented I/O model?</p>
@@ -161,7 +161,7 @@ ga('send', 'pageview');
     
 
     <footer class="article-footer">
-      <a data-url="http://akmalmuqeeth.com/2016/03/05/NodeJs-The-Feyman-Way/" data-id="cilg27fl80001eobyynjc0bce" class="article-share-link">
+      <a data-url="http://akmalmuqeeth.com/2016/03/05/NodeJs-The-Feyman-Way/" data-id="cilofp0b60000e3by3ekpnz0t" class="article-share-link">
         <i class="fa fa-share"></i> Share
       </a>
       
@@ -186,6 +186,13 @@ ga('send', 'pageview');
     </a>
   </li>
   
+  
+  <li role="presentation">
+    <a href="/2016/03/11/npm-quick-guide/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">A quick guide to the Node Package Manager (NPM)</span>
+      <i class="fa fa-chevron-right pull-right"></i>
+    </a>
+  </li>
   
 </ul>
 
@@ -218,7 +225,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/NodeJS/">NodeJS</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/programming/">programming</a><span class="sidebar-module-list-count">1</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/NodeJS/">NodeJS</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/npm/">npm</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/programming/">programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/quick-guide/">quick guide</a><span class="sidebar-module-list-count">1</span></li></ul>
   </div>
 
 
@@ -227,7 +234,7 @@ ga('send', 'pageview');
   <div class="sidebar-module">
     <h4>Tag Cloud</h4>
     <p class="tagcloud">
-      <a href="/tags/NodeJS/" style="font-size: 10px;">NodeJS</a> <a href="/tags/programming/" style="font-size: 10px;">programming</a>
+      <a href="/tags/NodeJS/" style="font-size: 20px;">NodeJS</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/programming/" style="font-size: 10px;">programming</a> <a href="/tags/quick-guide/" style="font-size: 10px;">quick guide</a>
     </p>
   </div>
 
@@ -235,7 +242,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Archives</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2016/03/">March 2016</a><span class="sidebar-module-list-count">2</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2016/03/">March 2016</a><span class="sidebar-module-list-count">3</span></li></ul>
   </div>
 
 
@@ -244,6 +251,10 @@ ga('send', 'pageview');
   <div class="sidebar-module">
     <h4>Recents</h4>
     <ul class="sidebar-module-list">
+      
+        <li>
+          <a href="/2016/03/11/npm-quick-guide/">A quick guide to the Node Package Manager (NPM)</a>
+        </li>
       
         <li>
           <a href="/2016/03/05/NodeJs-The-Feyman-Way/">Understand the basics of NodeJs The Feynman Way</a>
