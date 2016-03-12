@@ -3,17 +3,45 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Akmal Muqeeth</title>
+  <title>A quick guide to the Node Package Manager (NPM) | Akmal Muqeeth</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Java, Groovy, NodeJS, AngularJS etc.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Akmal Muqeeth">
-<meta property="og:url" content="http://akmalmuqeeth.com/index.html">
+  <meta name="description" content="1. How do you initialize a  project?
+npm init
+
+initialize with all defaults
+npm init --yes
+
+2. How do you set defaults for project initialization?
+npm set init-author-name  &amp;#39;Akmal&amp;#39;
+
+3. How do">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A quick guide to the Node Package Manager (NPM)">
+<meta property="og:url" content="http://akmalmuqeeth.com/2016/03/11/npm-quick-guide/index.html">
 <meta property="og:site_name" content="Akmal Muqeeth">
-<meta property="og:description" content="Java, Groovy, NodeJS, AngularJS etc.">
+<meta property="og:description" content="1. How do you initialize a  project?
+npm init
+
+initialize with all defaults
+npm init --yes
+
+2. How do you set defaults for project initialization?
+npm set init-author-name  &amp;#39;Akmal&amp;#39;
+
+3. How do">
+<meta property="og:updated_time" content="2016-03-12T01:06:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Akmal Muqeeth">
-<meta name="twitter:description" content="Java, Groovy, NodeJS, AngularJS etc.">
+<meta name="twitter:title" content="A quick guide to the Node Package Manager (NPM)">
+<meta name="twitter:description" content="1. How do you initialize a  project?
+npm init
+
+initialize with all defaults
+npm init --yes
+
+2. How do you set defaults for project initialization?
+npm set init-author-name  &amp;#39;Akmal&amp;#39;
+
+3. How do">
   
     <link rel="alternate" href="/atom.xml" title="Akmal Muqeeth" type="application/atom+xml">
   
@@ -64,7 +92,7 @@ ga('send', 'pageview');
     <div class="collapse navbar-collapse" id="main-menu-navbar">
       <ul class="nav navbar-nav">
         
-          <li><a class="active"
+          <li><a class=""
                  href="/index.html">Home</a></li>
         
           <li><a class=""
@@ -93,15 +121,13 @@ ga('send', 'pageview');
 
     <div class="row">
         <div class="col-sm-8 blog-main">
-          
-  
-    <article id="post-npm-quick-guide" class="article article-type-post" itemscope itemprop="blogPost">
+          <article id="post-npm-quick-guide" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/11/npm-quick-guide/">A quick guide to the Node Package Manager (NPM)</a>
+    <h1 class="article-title" itemprop="name">
+      A quick guide to the Node Package Manager (NPM)
     </h1>
   
 
@@ -201,149 +227,29 @@ ga('send', 'pageview');
     </footer>
   </div>
   
-</article>
-
-
-
-  
-    <article id="post-NodeJs-The-Feyman-Way" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
     
+<ul id="article-nav" class="nav nav-pills nav-justified">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/05/NodeJs-The-Feyman-Way/">Understand the basics of NodeJs The Feynman Way</a>
-    </h1>
+  <li role="presentation">
+    <a href="/2016/03/05/NodeJs-The-Feyman-Way/" id="article-nav-older" class="article-nav-link-wrap">
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">Understand the basics of NodeJs The Feynman Way</span>
+    </a>
+  </li>
   
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/03/05/NodeJs-The-Feyman-Way/" class="article-date"><time datetime="2016-03-06T01:05:11.000Z" itemprop="datePublished">2016-03-05</time></a>
-</div>
-
-    
-    
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Understand the basics of NodeJS using the Feynman Technique(Whats that? Read <a href="http://www.akmalmuqeeth.com/2016/03/04/feynman-technique/" title="The Feynman Technique" target="_blank" rel="external">here</a>).</p>
-<h3 id="1-Concept"><a href="#1-Concept" class="headerlink" title="1. Concept"></a>1. Concept</h3><ul>
-<li>NodeJS is a software platform which can run programs written in javascript. </li>
-<li>Its an open-source, <strong>cross-platform runtime environment</strong> for developing server-side Web applications.</li>
-<li>The JavaScript is executed by the <strong>V8</strong>, a JavaScript engine developed by Google which is used in Chrome browser. </li>
-<li>It uses a JavaScript API to access the network and file system.</li>
-<li>NodeJS uses asynchronous programming and has an evented I/O model.</li>
-<li>It is singlethreaded and lock free. This is what makes it really fast.</li>
+  
 </ul>
-<h3 id="2-Explain-Like-I’m-5"><a href="#2-Explain-Like-I’m-5" class="headerlink" title="2. Explain Like I’m 5"></a>2. Explain Like I’m 5</h3><h4 id="NodeJS-Asynchronous-Programming"><a href="#NodeJS-Asynchronous-Programming" class="headerlink" title="NodeJS Asynchronous Programming"></a>NodeJS Asynchronous Programming</h4><p>An incoming request to a NodeJS server will trigger a Javascript function. Let’s call this an ‘event’ function. The event function does a little bit of work and in turn triggers other (asynchronous) tasks . These other tasks could be connecting to a database or pulling content from another server. </p>
-<p>Once these tasks have been kicked off, lets call them ‘Task A’ and ‘Task B’, the original ‘event’ function finishes and Node.js goes back to sleep. When ‘Task A’ or ‘Task B’ are completed, they get back with a response to our NodeJS application and that triggers another ‘event’ function or a callback function. </p>
-<p>So to sum it up, NodeJs responds to a event, does some processing  and triggers other events. In the meantime it is free to respond to other incoming events. This is why Node.js does such a great job managing thousands of simultaneous connections.</p>
-<h3 id="3-Pinpointing-Bridge-the-knowledge-gap"><a href="#3-Pinpointing-Bridge-the-knowledge-gap" class="headerlink" title="3. Pinpointing (Bridge the knowledge gap)"></a>3. Pinpointing (Bridge the knowledge gap)</h3><p>What does it mean that NodeJS has an evented I/O model?</p>
-<p>Heres a good <a href="http://code.tutsplus.com/tutorials/this-time-youll-learn-node-js--net-19448" title="This Time You&#39;ll Learn NodeJS" target="_blank" rel="external">resource</a> I found:</p>
-<blockquote>
-<p>“When creating a web server, there are basically two choices when dealing with multiple concurrent connection requests.  The first, which is the more traditional route taken by web servers such as Apache, is to use threads to handle incoming connection requests. The other method, the one taken by Node and some extremely fast modern servers such as Nginx and Thin, is to use a single non-blocking thread with an event loop. </p>
-<p>This is where the decision to use JavaScript really shines, since JavaScript was designed to be used in a single threaded event loop-based environment: the browser. <strong><em>JavaScript’s ability to pass around closures makes event-based programming dead simple.</em></strong> You basically just call a function to perform some type of I/O and pass it a callback function and JavaScript automatically creates a closure, making sure that the correct state is preserved even after the calling function has long since gone out of scope.”</p>
-</blockquote>
-<h3 id="4-Analogy"><a href="#4-Analogy" class="headerlink" title="4. Analogy"></a>4. Analogy</h3><p>As a webserver, think of NodeJS as an <strong><em>air traffic controller</em></strong>.</p>
-<p>Air traffic controllers direct aircrafts efficiently to minimize delays. They manage the flow of aircraft into and out of the airport airspace, guide pilots during takeoff and landing, and monitor aircraft, as they travel through the skies. They guide one pilot and go back to waiting for the next one. When the previous pilot is about to land, he/she contacts the ATC again and gets the clearoff.</p>
-<p>NodeJS works in a very similar fashion. It waits for incoming requests, does some minimal processing and triggers other tasks. It doesnt wait for all these other tasks to complete. Infact the tasks get back to NodeJS when they are complete. In the meantime NodeJS is free handle other requests</p>
-<h3 id="5-Simplify"><a href="#5-Simplify" class="headerlink" title="5. Simplify"></a>5. Simplify</h3><p>NodeJs is a platform which enables you to create web applications using Javascript.<br>Internally, it uses Google Chrome’s V8 engine to execute the javascript that you wrote.<br>Its designed in a way to make I/O operations super-fast. </p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="http://akmalmuqeeth.com/2016/03/05/NodeJs-The-Feyman-Way/" data-id="cilofa8yo000048byd2ro3t3b" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
-      
-        <a href="http://akmalmuqeeth.com/2016/03/05/NodeJs-The-Feyman-Way/#disqus_thread" class="article-comment-link">
-          <i class="fa fa-comment"></i> Comments
-        </a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NodeJS/">NodeJS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programming/">programming</a></li></ul>
 
 
-    </footer>
-  </div>
   
 </article>
 
 
-
-  
-    <article id="post-feynman-technique" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/04/feynman-technique/">The Feynman Technique to learn better</a>
-    </h1>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/03/04/feynman-technique/" class="article-date"><time datetime="2016-03-05T04:23:59.000Z" itemprop="datePublished">2016-03-04</time></a>
-</div>
-
-    
-    
-
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>The Feynman Technique helps you to understand, recall and explain anything in under 20 minutes. </p>
-<p>It works on the principle that learning is not about remembering something difficult, but it is about making things easier.</p>
-<p>The Feynman technique essentially has five steps: Concept, Explain Like I’m 5,  Pinpoint, Analogy and Simplify.</p>
-<p><img src="/images/feynman.jpg" alt="The Feynman Technique to learn better"></p>
-<p>Source:  <a href="https://www.linkedin.com/pulse/20141024121647-107244930-how-to-learn-anything-faster-with-the-feynman-technique" title="Floris Wolswijk" target="_blank" rel="external">Floris Wolswijk’s Blog</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      <a data-url="http://akmalmuqeeth.com/2016/03/04/feynman-technique/" data-id="cilofa8yw000b48by6aikkesc" class="article-share-link">
-        <i class="fa fa-share"></i> Share
-      </a>
-      
-        <a href="http://akmalmuqeeth.com/2016/03/04/feynman-technique/#disqus_thread" class="article-comment-link">
-          <i class="fa fa-comment"></i> Comments
-        </a>
-      
-      
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
+</section>
 
 
 
@@ -423,11 +329,13 @@ ga('send', 'pageview');
 <script>
   var disqus_shortname = 'akmalmuqeethcom';
   
+  var disqus_url = 'http://akmalmuqeeth.com/2016/03/11/npm-quick-guide/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
