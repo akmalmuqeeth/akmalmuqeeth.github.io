@@ -6,25 +6,25 @@
     <title>Understand the basics of NodeJs The Feynman Way | Akmal A Muqeeth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="Understand the basics of NodeJS using the Feynman Technique(Whats that? Read here).
-1. Concept
-NodeJS is a software platform which can run programs written in javascript. 
-Its an open-source, cross-pl">
+1. ConceptA simple google search for NodeJS would return: 
+
+NodeJS is a software platform which can run programs wri">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Understand the basics of NodeJs The Feynman Way">
 <meta property="og:url" content="http://akmalmuqeeth.com/2016/03/05/NodeJs-The-Feyman-Way/index.html">
 <meta property="og:site_name" content="Akmal A Muqeeth">
 <meta property="og:description" content="Understand the basics of NodeJS using the Feynman Technique(Whats that? Read here).
-1. Concept
-NodeJS is a software platform which can run programs written in javascript. 
-Its an open-source, cross-pl">
+1. ConceptA simple google search for NodeJS would return: 
+
+NodeJS is a software platform which can run programs wri">
 <meta property="og:image" content="http://akmalmuqeeth.com/images/nodejs.png">
-<meta property="og:updated_time" content="2016-03-24T20:03:40.000Z">
+<meta property="og:updated_time" content="2016-03-29T17:27:37.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Understand the basics of NodeJs The Feynman Way">
 <meta name="twitter:description" content="Understand the basics of NodeJS using the Feynman Technique(Whats that? Read here).
-1. Concept
-NodeJS is a software platform which can run programs written in javascript. 
-Its an open-source, cross-pl">
+1. ConceptA simple google search for NodeJS would return: 
+
+NodeJS is a software platform which can run programs wri">
 <meta name="twitter:image" content="http://akmalmuqeeth.com/images/nodejs.png">
     
 
@@ -130,11 +130,11 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                4
+                3
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                6
+                4
                 <span>tags</span>
             </div>
         </div>
@@ -194,16 +194,29 @@ ga('send', 'pageview');
         
             
             <p>Understand the basics of NodeJS using the Feynman Technique(Whats that? Read <a href="http://www.akmalmuqeeth.com/2016/03/04/feynman-technique/" title="The Feynman Technique" target="_blank" rel="external">here</a>).</p>
-<h3 id="1-Concept"><a href="#1-Concept" class="headerlink" title="1. Concept"></a>1. Concept</h3><ul>
-<li>NodeJS is a software platform which can run programs written in javascript. </li>
+<h3 id="1-Concept"><a href="#1-Concept" class="headerlink" title="1. Concept"></a>1. Concept</h3><p>A simple google search for NodeJS would return: </p>
+<ul>
+<li>NodeJS is a <strong>software platform</strong> which can run programs written in javascript. </li>
 <li>Its an open-source, <strong>cross-platform runtime environment</strong> for developing server-side Web applications.</li>
 <li>The JavaScript is executed by the <strong>V8</strong>, a JavaScript engine developed by Google which is used in Chrome browser. </li>
-<li>It uses a JavaScript API to access the network and file system.</li>
-<li>NodeJS uses asynchronous programming and has an evented I/O model.</li>
-<li>It is singlethreaded and lock free. This is what makes it really fast.</li>
+<li>It <strong>uses a JavaScript API</strong> to access the network and file system.</li>
+<li>NodeJS uses asynchronous programming and has an <strong>evented I/O</strong> model.</li>
+<li>It is <strong>singlethreaded</strong> and lock free. This is what makes it <strong>really fast</strong>.</li>
 </ul>
 <a id="more"></a>
-<h3 id="2-Explain-Like-I’m-5"><a href="#2-Explain-Like-I’m-5" class="headerlink" title="2. Explain Like I’m 5"></a>2. Explain Like I’m 5</h3><h4 id="NodeJS-Asynchronous-Programming"><a href="#NodeJS-Asynchronous-Programming" class="headerlink" title="NodeJS Asynchronous Programming"></a>NodeJS Asynchronous Programming</h4><p>An incoming request to a NodeJS server will trigger a Javascript function. Let’s call this an ‘event’ function. The event function does a little bit of work and in turn triggers other (asynchronous) tasks . These other tasks could be connecting to a database or pulling content from another server. </p>
+<h3 id="2-Explain-what-you-know"><a href="#2-Explain-what-you-know" class="headerlink" title="2. Explain what you know"></a>2. Explain what you know</h3><p>How much of the above do I really understand? I decided to list down all that I know which would help in identifying gaps in my knowledge.</p>
+<h4 id="NodeJS-is-a-software-platform-not-a-framework"><a href="#NodeJS-is-a-software-platform-not-a-framework" class="headerlink" title="NodeJS is a software platform not a framework"></a>NodeJS is a software platform not a framework</h4><p> NodeJs is NOT a framework. It is NOT a collection of libraries.  It does NOT provide any scaffolding to create an application. </p>
+<p> NodeJs is a <strong><em>platform</em></strong>. A platform on which a software program can execute. </p>
+<p> A program is written in Javascript and can be run using NodeJS.</p>
+<p> NodeJS provides APIs to access platform resources</p>
+<p>To a certain extent, NodeJS is to Javascript, what a JVM is to Java.</p>
+<h4 id="A-Cross-platform-runtime-environment-which-uses-Chrome’s-V8-Engine"><a href="#A-Cross-platform-runtime-environment-which-uses-Chrome’s-V8-Engine" class="headerlink" title="A Cross-platform runtime environment which uses Chrome’s V8 Engine :"></a>A Cross-platform runtime environment which uses Chrome’s V8 Engine :</h4><p>NodeJS uses Chrome’s V8 engine to compile and execute Javascript. </p>
+<p>Node.js is cross-platform meaning it works on Windows, OSX and Linux. If you write your NodeJS code on a Mac OSX it should work cleanly without the need for compilation. </p>
+<h4 id="Evented-I-O-model"><a href="#Evented-I-O-model" class="headerlink" title="Evented I/O model :"></a>Evented I/O model :</h4><p>A browser has an event loop. The event loop places items on the queue. I am not very sure how this is achieved by NodeJS though. </p>
+<pre><code>--gap in knowledge identified--
+</code></pre><h4 id="NodeJS-Is-Single-threaded-which-makes-it-really-fast"><a href="#NodeJS-Is-Single-threaded-which-makes-it-really-fast" class="headerlink" title="NodeJS Is Single threaded, which makes it really fast :"></a>NodeJS Is Single threaded, which makes it really fast :</h4><p>Single threaded would mean that each incoming request would be handled by the same thread. There is no thread pool. In that sense though, shouldnt t make NodeJS susceptible and slow. Hmmm!</p>
+<p>I know what a single threaded system is. I dont really know how it makes NodeJS fast.  </p>
+<p>An incoming request to a NodeJS server will trigger a Javascript function. Let’s call this an ‘event’ function. The event function does a little bit of work and in turn triggers other (asynchronous) tasks . These other tasks could be connecting to a database or pulling content from another server. </p>
 <p>Once these tasks have been kicked off, lets call them ‘Task A’ and ‘Task B’, the original ‘event’ function finishes and Node.js goes back to sleep. When ‘Task A’ or ‘Task B’ are completed, they get back with a response to our NodeJS application and that triggers another ‘event’ function or a callback function. </p>
 <p>So to sum it up, NodeJs responds to a event, does some processing  and triggers other events. In the meantime it is free to respond to other incoming events. This is why Node.js does such a great job managing thousands of simultaneous connections.</p>
 <h3 id="3-Pinpointing-Bridge-the-knowledge-gap"><a href="#3-Pinpointing-Bridge-the-knowledge-gap" class="headerlink" title="3. Pinpointing (Bridge the knowledge gap)"></a>3. Pinpointing (Bridge the knowledge gap)</h3><p>What does it mean that NodeJS has an evented I/O model?</p>
@@ -336,24 +349,6 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2016/03/23/code-i-wrote-ten-years-ago/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/codehuman.jpeg)" alt="What will i say to the code I wrote ten years ago?" class="thumbnail-image"></span>
-    
-</a>
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2016/03/23/code-i-wrote-ten-years-ago/" class="title">What will i say to the code I wrote ten years ago?</a></p>
-                            <p class="item-date"><time datetime="2016-03-23T23:03:09.000Z" itemprop="datePublished">2016-03-23</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
                             <a href="/2016/03/11/npm-quick-guide/" class="thumbnail">
     
     
@@ -416,7 +411,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">4</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li></ul>
         </div>
     </div>
 
@@ -425,7 +420,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/NodeJS/">NodeJS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/general/">general</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/quick-guide/">quick guide</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/thoughts/">thoughts</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/NodeJS/">NodeJS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/quick-guide/">quick guide</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -434,7 +429,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/NodeJS/" style="font-size: 20px;">NodeJS</a> <a href="/tags/general/" style="font-size: 10px;">general</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/programming/" style="font-size: 10px;">programming</a> <a href="/tags/quick-guide/" style="font-size: 10px;">quick guide</a> <a href="/tags/thoughts/" style="font-size: 10px;">thoughts</a>
+            <a href="/tags/NodeJS/" style="font-size: 20px;">NodeJS</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/programming/" style="font-size: 10px;">programming</a> <a href="/tags/quick-guide/" style="font-size: 10px;">quick guide</a>
         </div>
     </div>
 
