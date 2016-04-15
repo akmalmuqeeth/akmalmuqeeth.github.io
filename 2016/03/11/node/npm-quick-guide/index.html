@@ -3,17 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Tag: NodeJS | Akmal A Muqeeth</title>
+    <title>A quick guide to the Node Package Manager (NPM) | Akmal A Muqeeth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Java, Groovy, NodeJS, AngularJS etc.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Akmal A Muqeeth">
-<meta property="og:url" content="http://akmalmuqeeth.com/tags/NodeJS/index.html">
+    <meta name="description" content="1. How do you initialize a project using the node package manager?
+npm init">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A quick guide to the Node Package Manager (NPM)">
+<meta property="og:url" content="http://akmalmuqeeth.com/2016/03/11/node/npm-quick-guide/index.html">
 <meta property="og:site_name" content="Akmal A Muqeeth">
-<meta property="og:description" content="Java, Groovy, NodeJS, AngularJS etc.">
+<meta property="og:description" content="1. How do you initialize a project using the node package manager?
+npm init">
+<meta property="og:image" content="http://akmalmuqeeth.com/images/npm.jpeg">
+<meta property="og:updated_time" content="2016-03-24T20:02:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Akmal A Muqeeth">
-<meta name="twitter:description" content="Java, Groovy, NodeJS, AngularJS etc.">
+<meta name="twitter:title" content="A quick guide to the Node Package Manager (NPM)">
+<meta name="twitter:description" content="1. How do you initialize a project using the node package manager?
+npm init">
+<meta name="twitter:image" content="http://akmalmuqeeth.com/images/npm.jpeg">
     
 
     
@@ -145,20 +151,16 @@ ga('send', 'pageview');
 </aside>
 
             
-            <section id="main">
-<div class="timeline timeline-wrap">
-    <div class="timeline-row timeline-row-major">
-        <span class="node"><i class="fa fa-tag"></i></span>
-        <h1 class="title">#NodeJS</h1>
-    </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+            <section id="main"><article id="post-node/npm-quick-guide" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2016/03/11/node/npm-quick-guide/">A quick guide to the Node Package Manager (NPM)</a>
+        <h1 class="article-title" itemprop="name">
+            A quick guide to the Node Package Manager (NPM)
         </h1>
     
 
@@ -180,41 +182,174 @@ ga('send', 'pageview');
     </div>
 
                 </div>
-            </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="1-How-do-you-initialize-a-project-using-the-node-package-manager"><a href="#1-How-do-you-initialize-a-project-using-the-node-package-manager" class="headerlink" title="1. How do you initialize a project using the node package manager?"></a>1. How do you initialize a project using the node package manager?</h3><blockquote>
+<p><code>npm init</code></p>
+</blockquote>
+<a id="more"></a>
+<h4 id="initialize-with-all-defaults"><a href="#initialize-with-all-defaults" class="headerlink" title="initialize with all defaults"></a>initialize with all defaults</h4><blockquote>
+<p><code>npm init --yes</code></p>
+</blockquote>
+<h3 id="2-How-do-you-set-defaults-for-project-initialization"><a href="#2-How-do-you-set-defaults-for-project-initialization" class="headerlink" title="2. How do you set defaults for project initialization?"></a>2. How do you set defaults for project initialization?</h3><blockquote>
+<p><code>npm set init-author-name  &#39;Akmal&#39;</code></p>
+</blockquote>
+<h3 id="3-How-do-you-install-packages"><a href="#3-How-do-you-install-packages" class="headerlink" title="3. How do you install packages?"></a>3. How do you install packages?</h3><blockquote>
+<p><code>npm install lodash</code></p>
+</blockquote>
+<h4 id="install-and-save-in-package-json"><a href="#install-and-save-in-package-json" class="headerlink" title="install and save in package.json"></a>install and save in package.json</h4><blockquote>
+<p><code>npm install lodash -S</code></p>
+</blockquote>
+<h4 id="install-and-save-the-exact-version-in-package-json"><a href="#install-and-save-the-exact-version-in-package-json" class="headerlink" title="install and save the exact version in package.json"></a>install and save the <strong><em>exact version</em></strong> in package.json</h4><blockquote>
+<p><code>npm install lodash -S -E</code></p>
+</blockquote>
+<h4 id="install-and-save-the-exact-version-as-a-development-dependency"><a href="#install-and-save-the-exact-version-as-a-development-dependency" class="headerlink" title="install and save the exact version as a development dependency"></a>install and save the exact version as a <strong><em>development dependency</em></strong></h4><blockquote>
+<p><code>npm install lodash -D -E</code></p>
+</blockquote>
+<h4 id="install-from-a-git-repo"><a href="#install-from-a-git-repo" class="headerlink" title="install from a git repo"></a>install from a git repo</h4><blockquote>
+<p><code>npm install url</code></p>
+</blockquote>
+<h3 id="4-How-do-you-list-installed-packages"><a href="#4-How-do-you-list-installed-packages" class="headerlink" title="4. How do you list installed packages?"></a>4. How do you list installed packages?</h3><h4 id="list-the-dependency-tree"><a href="#list-the-dependency-tree" class="headerlink" title="list the dependency tree"></a>list the dependency tree</h4><blockquote>
+<p><code>npm list</code></p>
+</blockquote>
+<h4 id="list-only-the-packages-directly-installed-in-the-current-project"><a href="#list-only-the-packages-directly-installed-in-the-current-project" class="headerlink" title="list only the packages directly installed in the current project"></a>list only the packages directly installed in the current project</h4><blockquote>
+<p><code>npm list --depth 0</code></p>
+</blockquote>
+<h3 id="5-How-do-you-update-dependencies"><a href="#5-How-do-you-update-dependencies" class="headerlink" title="5. How do you update dependencies?"></a>5. How do you update dependencies?</h3><blockquote>
+<p><code>npm update</code></p>
+</blockquote>
+<h3 id="6-How-do-you-uninstall-dependencies"><a href="#6-How-do-you-uninstall-dependencies" class="headerlink" title="6. How do you uninstall dependencies?"></a>6. How do you uninstall dependencies?</h3><blockquote>
+<p><code>npm uninstall lodash</code></p>
+</blockquote>
+<h4 id="Uninstall-and-remove-from-package-json"><a href="#Uninstall-and-remove-from-package-json" class="headerlink" title="Uninstall and remove from package.json"></a>Uninstall and remove from package.json</h4><blockquote>
+<p><code>npm uninstall lodash --save</code></p>
+</blockquote>
+<h3 id="7-How-do-you-remove-extraneous-packages-packages-saved-in-node-modules-folder-but-not-listed-in-package-json"><a href="#7-How-do-you-remove-extraneous-packages-packages-saved-in-node-modules-folder-but-not-listed-in-package-json" class="headerlink" title="7. How do you remove extraneous packages (packages saved in node modules folder but not listed in package.json)?"></a>7. How do you remove extraneous packages (packages saved in node modules folder but not listed in package.json)?</h3><blockquote>
+<p><code>npm prune</code></p>
+</blockquote>
+<h3 id="8-How-do-you-write-simple-scripts-for-the-project"><a href="#8-How-do-you-write-simple-scripts-for-the-project" class="headerlink" title="8. How do you write simple scripts for the project?"></a>8. How do you write simple scripts for the project?</h3><p>Include the scripts in the scripts section of package.json</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span> : &#123;</span><br><span class="line">    <span class="string">"test"</span> : <span class="string">"node test.js"</span>,</span><br><span class="line">    <span class="string">"start"</span> : <span class="string">"node index.js"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>run the above scripts using <code>npm test</code> or <code>npm start</code></p>
+<p>NPM supports the “scripts” property of the package.json script, for the  scripts <a href="https://docs.npmjs.com/misc/scripts" title="NPM Scripts" target="_blank" rel="external">here</a></p>
+<p>NOTE: For custom scripts, run the script using <code>npm run &lt;script_name&gt;</code> </p>
+<h3 id="9-How-do-you-get-the-repo-URL-of-a-package"><a href="#9-How-do-you-get-the-repo-URL-of-a-package" class="headerlink" title="9. How do you get the repo URL of a package"></a>9. How do you get the repo URL of a package</h3><blockquote>
+<p><code>npm repo lodash</code></p>
+</blockquote>
+<h3 id="10-How-do-you-register-your-package"><a href="#10-How-do-you-register-your-package" class="headerlink" title="10. How do you register your package"></a>10. How do you register your package</h3><ul>
+<li>Create a account with NPM</li>
+<li>Add user <code>npm adduser</code></li>
+<li>Publish <code>npm publish</code></li>
+</ul>
+
+        
         </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2016/03/05/node/NodeJs-The-Feyman-Way/">Understand the basics of NodeJs The Feynman Way</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/03/05/node/NodeJs-The-Feyman-Way/">
-            <time datetime="2016-03-06T01:05:11.000Z" itemprop="datePublished">2016-03-05</time>
-        </a>
-    </div>
+        <footer class="article-footer">
+            <div class="share-container">
 
 
-                    
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/NodeJS/">NodeJS</a>, <a class="tag-link" href="/tags/programming/">programming</a>
-    </div>
 
-                </div>
-            </div>
-        </div>
-    
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
 </div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="http://akmalmuqeeth.com/2016/03/11/node/npm-quick-guide/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://akmalmuqeeth.com/2016/03/11/node/npm-quick-guide/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2016/04/14/ionic-cordova-point-by-point/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    Point by Point - Cordova and Ionic
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2016/03/05/node/NodeJs-The-Feyman-Way/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Understand the basics of NodeJs The Feynman Way</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
 </section>
             
                 <aside id="sidebar">
@@ -361,11 +496,13 @@ ga('send', 'pageview');
     var disqus_shortname = 'hexo-theme-icarus';
     
     
+    var disqus_url = 'http://akmalmuqeeth.com/2016/03/11/node/npm-quick-guide/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
