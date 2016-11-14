@@ -3,17 +3,26 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Tag: point by point | Akmal A Muqeeth</title>
+    <title>Why do I need to write HTML inside React code? Nope, you don&#39;t! | Akmal A Muqeeth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Java, Groovy, NodeJS, AngularJS etc.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Akmal A Muqeeth">
-<meta property="og:url" content="http://akmalmuqeeth.com/tags/point-by-point/index.html">
+    <meta name="description" content="What you see within a React component is ‘technically’ not HTML.
+Taking it to be HTML is the most common misconception about the React library.
+Let’s take a step back. We need to first look into how t">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Why do I need to write HTML inside React code? Nope, you don't!">
+<meta property="og:url" content="http://akmalmuqeeth.com/2016/11/11/html-in-react/index.html">
 <meta property="og:site_name" content="Akmal A Muqeeth">
-<meta property="og:description" content="Java, Groovy, NodeJS, AngularJS etc.">
+<meta property="og:description" content="What you see within a React component is ‘technically’ not HTML.
+Taking it to be HTML is the most common misconception about the React library.
+Let’s take a step back. We need to first look into how t">
+<meta property="og:image" content="http://res.cloudinary.com/dwdy6qx55/image/upload/s--ZqocSSJJ--/v1478907358/React.js_logo.svg_gdmu0f.png">
+<meta property="og:updated_time" content="2016-11-11T23:36:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Akmal A Muqeeth">
-<meta name="twitter:description" content="Java, Groovy, NodeJS, AngularJS etc.">
+<meta name="twitter:title" content="Why do I need to write HTML inside React code? Nope, you don't!">
+<meta name="twitter:description" content="What you see within a React component is ‘technically’ not HTML.
+Taking it to be HTML is the most common misconception about the React library.
+Let’s take a step back. We need to first look into how t">
+<meta name="twitter:image" content="http://res.cloudinary.com/dwdy6qx55/image/upload/s--ZqocSSJJ--/v1478907358/React.js_logo.svg_gdmu0f.png">
     
 
     
@@ -145,20 +154,16 @@ ga('send', 'pageview');
 </aside>
 
             
-            <section id="main">
-<div class="timeline timeline-wrap">
-    <div class="timeline-row timeline-row-major">
-        <span class="node"><i class="fa fa-tag"></i></span>
-        <h1 class="title">#point by point</h1>
-    </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+            <section id="main"><article id="post-html-in-react" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2016/04/23/secrets-of-programming/">Best kept secrets of programmers</a>
+        <h1 class="article-title" itemprop="name">
+            Why do I need to write HTML inside React code? Nope, you don&#39;t!
         </h1>
     
 
@@ -166,8 +171,8 @@ ga('send', 'pageview');
                     
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/04/23/secrets-of-programming/">
-            <time datetime="2016-04-23T23:48:19.000Z" itemprop="datePublished">2016-04-23</time>
+        <a href="/2016/11/11/html-in-react/">
+            <time datetime="2016-11-12T03:28:19.000Z" itemprop="datePublished">2016-11-11</time>
         </a>
     </div>
 
@@ -176,76 +181,140 @@ ga('send', 'pageview');
                     
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/point-by-point/">point by point</a>, <a class="tag-link" href="/tags/programming/">programming</a>
+        <a class="tag-link" href="/tags/ReactJs/">ReactJs</a>, <a class="tag-link" href="/tags/programming/">programming</a>
     </div>
 
                 </div>
-            </div>
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>What you see within a React component is ‘technically’ not HTML.</p>
+<p>Taking it to be HTML is the most common misconception about the React library.</p>
+<p>Let’s take a step back. We need to first look into how the barebones of React works.</p>
+<p>In React, we do NOT write any html directly. We use ‘React DOM’ nodes to specify how the page should be structured.</p>
+<p>so this ‘Hello World’ in plain HTML:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello World!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>in ‘plain’ React, would be:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> div = React.DOM.div</span><br><span class="line"><span class="keyword">var</span> h1 = React.DOM.h1</span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span> HelloWorldComponent = (</span><br><span class="line">  div(<span class="literal">null</span>,</span><br><span class="line">    h1(<span class="literal">null</span>, <span class="string">'Hello World!'</span>)</span><br><span class="line">  )</span><br><span class="line">)</span><br><span class="line">ReactDOM.render(HelloWorldComponent, <span class="built_in">document</span>.getElementById(<span class="string">'app'</span>))</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>See line 5 and 6. div and h1 are actually React nodes.</p>
+<p>For a React node, first argument are the <strong>properties</strong> and second argument is its <strong>child</strong>.</p>
+<p>so for the ‘div’ React Node on line 5, properties are null and child is h1 React Node. h1 react node will have its own set of properties and its child.</p>
+<p>Imagine a tree of nodes if you will.</p>
+<p>We then take this tree of React Nodes and give it to <strong>ReactDom.render</strong> on line 10</p>
+<p>ReactDOM knows how to convert each ‘React Node’ to its corresponding html tag. It converts each node in the tree to a html tag and attaches the resulting html structure to the id ‘app’ as specified on line 10.</p>
+<p>That’s it.</p>
+<p>So any html that we wish to write should be written programmatically in terms of React Nodes.</p>
+<p>Lets look at a little more complex HTML</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">h3</span>&gt;</span>TODO<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">li</span>&gt;</span>One<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">li</span>&gt;</span>Two<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">li</span>&gt;</span>Three<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>The corresponding React Nodes structure for the above HTML would be:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">React.createElement(</span><br><span class="line">      <span class="string">'div'</span>,</span><br><span class="line">      <span class="literal">null</span>,</span><br><span class="line">      React.createElement(</span><br><span class="line">        <span class="string">'h3'</span>,</span><br><span class="line">        <span class="literal">null</span>,</span><br><span class="line">        <span class="string">'TODO'</span></span><br><span class="line">      ),</span><br><span class="line">      React.createElement(</span><br><span class="line">        <span class="string">'ul'</span>,</span><br><span class="line">        <span class="literal">null</span>,</span><br><span class="line">        React.createElement(</span><br><span class="line">          <span class="string">'li'</span>,</span><br><span class="line">          <span class="literal">null</span>,</span><br><span class="line">          <span class="string">'One'</span></span><br><span class="line">        ),</span><br><span class="line">        React.createElement(</span><br><span class="line">          <span class="string">'li'</span>,</span><br><span class="line">          <span class="literal">null</span>,</span><br><span class="line">          <span class="string">'Two'</span></span><br><span class="line">        ),</span><br><span class="line">        React.createElement(</span><br><span class="line">          <span class="string">'li'</span>,</span><br><span class="line">          <span class="literal">null</span>,</span><br><span class="line">          <span class="string">'Three'</span></span><br><span class="line">        )</span><br><span class="line">      )</span><br><span class="line">    );</span><br></pre></td></tr></table></figure>
+<p>The React team decided that <strong>its painful to write ‘plain’ React (i.e using React Node’s directly).</strong></p>
+<p>So they decided, lets build an intermediate form of ‘html looking code’ , which can be then converted to React Nodes.</p>
+<p>This ‘html looking code’ is called <strong>JSX or JavaScript XML</strong>, something that most people confuse for HTML.</p>
+<p>So, the idea is that programmers write their code in JSX and a transpiler (like babel) converts it to React Nodes, which in turn gets converted to HTML by ReactDOM.</p>
+<p>The ‘tree of nodes’ that we spoke about earlier is called a Virtual DOM.</p>
+<p>React creates a virtual DOM using the data that you give to it. If data changes, a new virtual DOM is created. React then compares this new virtual DOM with the previous one. In case of any changes, it knows which exact nodes to update. That’s what makes React <strong>fast</strong>.</p>
+
+        
         </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2016/04/17/scrum-vs-kanban/">Point by Point - Scrum Vs Kanban</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/04/17/scrum-vs-kanban/">
-            <time datetime="2016-04-17T22:15:11.000Z" itemprop="datePublished">2016-04-17</time>
-        </a>
-    </div>
+        <footer class="article-footer">
+            <div class="share-container">
 
 
-                    
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/kanban/">kanban</a>, <a class="tag-link" href="/tags/point-by-point/">point by point</a>, <a class="tag-link" href="/tags/project-management/">project management</a>, <a class="tag-link" href="/tags/scrum/">scrum</a>
-    </div>
 
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2016/04/14/ionic-cordova-point-by-point/">Point by Point - Cordova and Ionic</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/04/14/ionic-cordova-point-by-point/">
-            <time datetime="2016-04-14T19:54:11.000Z" itemprop="datePublished">2016-04-14</time>
-        </a>
-    </div>
-
-
-                    
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Ionic/">Ionic</a>, <a class="tag-link" href="/tags/point-by-point/">point by point</a>, <a class="tag-link" href="/tags/programming/">programming</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
 </div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+</div>
+
+            
+    
+        <a href="http://akmalmuqeeth.com/2016/11/11/html-in-react/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://akmalmuqeeth.com/2016/11/11/html-in-react/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2016/05/12/training-resources/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Review - Programming Training Resources (paid)</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
 </section>
             
                 <aside id="sidebar">
@@ -410,11 +479,13 @@ ga('send', 'pageview');
     var disqus_shortname = 'hexo-theme-icarus';
     
     
+    var disqus_url = 'http://akmalmuqeeth.com/2016/11/11/html-in-react/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
