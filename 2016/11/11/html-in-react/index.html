@@ -127,7 +127,7 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                8
+                9
                 <span>posts</span>
             </div>
             <div class="article-info-block">
@@ -195,9 +195,9 @@ ga('send', 'pageview');
 <p>Let’s take a step back. We need to first look into how the barebones of React works.</p>
 <p>In React, we do NOT write any html directly. We use ‘React DOM’ nodes to specify how the page should be structured.</p>
 <p>so this ‘Hello World’ in plain HTML:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello World!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello World!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>in ‘plain’ React, would be:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> div = React.DOM.div</span><br><span class="line"><span class="keyword">var</span> h1 = React.DOM.h1</span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span> HelloWorldComponent = (</span><br><span class="line">  div(<span class="literal">null</span>,</span><br><span class="line">    h1(<span class="literal">null</span>, <span class="string">'Hello World!'</span>)</span><br><span class="line">  )</span><br><span class="line">)</span><br><span class="line">ReactDOM.render(HelloWorldComponent, <span class="built_in">document</span>.getElementById(<span class="string">'app'</span>))</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> div = React.DOM.div</div><div class="line"><span class="keyword">var</span> h1 = React.DOM.h1</div><div class="line"> </div><div class="line"><span class="keyword">var</span> HelloWorldComponent = (</div><div class="line">  div(<span class="literal">null</span>,</div><div class="line">    h1(<span class="literal">null</span>, <span class="string">'Hello World!'</span>)</div><div class="line">  )</div><div class="line">)</div><div class="line">ReactDOM.render(HelloWorldComponent, <span class="built_in">document</span>.getElementById(<span class="string">'app'</span>))</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>See line 5 and 6. div and h1 are actually React nodes.</p>
 <p>For a React node, first argument are the <strong>properties</strong> and second argument is its <strong>child</strong>.</p>
@@ -208,9 +208,9 @@ ga('send', 'pageview');
 <p>That’s it.</p>
 <p>So any html that we wish to write should be written programmatically in terms of React Nodes.</p>
 <p>Lets look at a little more complex HTML</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">h3</span>&gt;</span>TODO<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">li</span>&gt;</span>One<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">li</span>&gt;</span>Two<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">li</span>&gt;</span>Three<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line"> <span class="tag">&lt;<span class="name">h3</span>&gt;</span>TODO<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></div><div class="line">   <span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">li</span>&gt;</span>One<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">li</span>&gt;</span>Two<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">     <span class="tag">&lt;<span class="name">li</span>&gt;</span>Three<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">   <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>The corresponding React Nodes structure for the above HTML would be:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">React.createElement(</span><br><span class="line">      <span class="string">'div'</span>,</span><br><span class="line">      <span class="literal">null</span>,</span><br><span class="line">      React.createElement(</span><br><span class="line">        <span class="string">'h3'</span>,</span><br><span class="line">        <span class="literal">null</span>,</span><br><span class="line">        <span class="string">'TODO'</span></span><br><span class="line">      ),</span><br><span class="line">      React.createElement(</span><br><span class="line">        <span class="string">'ul'</span>,</span><br><span class="line">        <span class="literal">null</span>,</span><br><span class="line">        React.createElement(</span><br><span class="line">          <span class="string">'li'</span>,</span><br><span class="line">          <span class="literal">null</span>,</span><br><span class="line">          <span class="string">'One'</span></span><br><span class="line">        ),</span><br><span class="line">        React.createElement(</span><br><span class="line">          <span class="string">'li'</span>,</span><br><span class="line">          <span class="literal">null</span>,</span><br><span class="line">          <span class="string">'Two'</span></span><br><span class="line">        ),</span><br><span class="line">        React.createElement(</span><br><span class="line">          <span class="string">'li'</span>,</span><br><span class="line">          <span class="literal">null</span>,</span><br><span class="line">          <span class="string">'Three'</span></span><br><span class="line">        )</span><br><span class="line">      )</span><br><span class="line">    );</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">React.createElement(</div><div class="line">      <span class="string">'div'</span>,</div><div class="line">      <span class="literal">null</span>,</div><div class="line">      React.createElement(</div><div class="line">        <span class="string">'h3'</span>,</div><div class="line">        <span class="literal">null</span>,</div><div class="line">        <span class="string">'TODO'</span></div><div class="line">      ),</div><div class="line">      React.createElement(</div><div class="line">        <span class="string">'ul'</span>,</div><div class="line">        <span class="literal">null</span>,</div><div class="line">        React.createElement(</div><div class="line">          <span class="string">'li'</span>,</div><div class="line">          <span class="literal">null</span>,</div><div class="line">          <span class="string">'One'</span></div><div class="line">        ),</div><div class="line">        React.createElement(</div><div class="line">          <span class="string">'li'</span>,</div><div class="line">          <span class="literal">null</span>,</div><div class="line">          <span class="string">'Two'</span></div><div class="line">        ),</div><div class="line">        React.createElement(</div><div class="line">          <span class="string">'li'</span>,</div><div class="line">          <span class="literal">null</span>,</div><div class="line">          <span class="string">'Three'</span></div><div class="line">        )</div><div class="line">      )</div><div class="line">    );</div></pre></td></tr></table></figure>
 <p>The React team decided that <strong>its painful to write ‘plain’ React (i.e using React Node’s directly).</strong></p>
 <p>So they decided, lets build an intermediate form of ‘html looking code’ , which can be then converted to React Nodes.</p>
 <p>This ‘html looking code’ is called <strong>JSX or JavaScript XML</strong>, something that most people confuse for HTML.</p>
@@ -291,6 +291,15 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
+        <a href="/2016/11/15/learning-programming-via-mentors/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    Review - Mentor Based Programming Training
+                
+            </div>
+        </a>
+    
     
         <a href="/2016/05/12/training-resources/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">Older</strong>
@@ -324,6 +333,24 @@ ga('send', 'pageview');
         <h3 class="widget-title">recent</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/11/15/learning-programming-via-mentors/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://res.cloudinary.com/dwdy6qx55/image/upload/s--lf54pHlQ--/v1479338615/Mentor-2_akxbo9.jpg)" alt="Review - Mentor Based Programming Training" class="thumbnail-image"></span>
+    
+</a>
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2016/11/15/learning-programming-via-mentors/" class="title">Review - Mentor Based Programming Training</a></p>
+                            <p class="item-date"><time datetime="2016-11-16T03:28:00.000Z" itemprop="datePublished">2016-11-15</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -397,24 +424,6 @@ ga('send', 'pageview');
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2016/04/14/ionic-cordova-point-by-point/" class="thumbnail">
-    
-    
-        <span style="background-image:url(http://res.cloudinary.com/dwdy6qx55/image/upload/v1461275597/ionic_tb_hwetah.png)" alt="Point by Point - Cordova and Ionic" class="thumbnail-image"></span>
-    
-</a>
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2016/04/14/ionic-cordova-point-by-point/" class="title">Point by Point - Cordova and Ionic</a></p>
-                            <p class="item-date"><time datetime="2016-04-14T19:54:11.000Z" itemprop="datePublished">2016-04-14</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -426,7 +435,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li></ul>
         </div>
     </div>
 
@@ -435,7 +444,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ionic/">Ionic</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NodeJS/">NodeJS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ReactJs/">ReactJs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kanban/">kanban</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/point-by-point/">point by point</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project-management/">project management</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/quick-guide/">quick guide</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reviews/">reviews</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scrum/">scrum</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ionic/">Ionic</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NodeJS/">NodeJS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ReactJs/">ReactJs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kanban/">kanban</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/point-by-point/">point by point</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/project-management/">project management</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/quick-guide/">quick guide</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reviews/">reviews</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scrum/">scrum</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -444,7 +453,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Ionic/" style="font-size: 10px;">Ionic</a> <a href="/tags/NodeJS/" style="font-size: 13.33px;">NodeJS</a> <a href="/tags/ReactJs/" style="font-size: 10px;">ReactJs</a> <a href="/tags/kanban/" style="font-size: 10px;">kanban</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/point-by-point/" style="font-size: 16.67px;">point by point</a> <a href="/tags/programming/" style="font-size: 20px;">programming</a> <a href="/tags/project-management/" style="font-size: 10px;">project management</a> <a href="/tags/quick-guide/" style="font-size: 10px;">quick guide</a> <a href="/tags/reviews/" style="font-size: 10px;">reviews</a> <a href="/tags/scrum/" style="font-size: 10px;">scrum</a>
+            <a href="/tags/Ionic/" style="font-size: 10px;">Ionic</a> <a href="/tags/NodeJS/" style="font-size: 13.33px;">NodeJS</a> <a href="/tags/ReactJs/" style="font-size: 10px;">ReactJs</a> <a href="/tags/kanban/" style="font-size: 10px;">kanban</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/point-by-point/" style="font-size: 16.67px;">point by point</a> <a href="/tags/programming/" style="font-size: 20px;">programming</a> <a href="/tags/project-management/" style="font-size: 10px;">project management</a> <a href="/tags/quick-guide/" style="font-size: 10px;">quick guide</a> <a href="/tags/reviews/" style="font-size: 13.33px;">reviews</a> <a href="/tags/scrum/" style="font-size: 10px;">scrum</a>
         </div>
     </div>
 
