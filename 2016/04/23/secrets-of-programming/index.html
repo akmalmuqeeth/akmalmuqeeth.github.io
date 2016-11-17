@@ -35,16 +35,15 @@ Know the to">
 
     
 
-    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/vendor/open-sans/styles.css">
-    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
 
     <link rel="stylesheet" href="/css/style.css">
 
-    <script src="/vendor/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
     
     
-        <link rel="stylesheet" href="/vendor/fancybox/jquery.fancybox.css">
     
     
         <script type="text/javascript">
@@ -61,7 +60,9 @@ ga('send', 'pageview');
     
     
 
+
 </head>
+
 <body>
     <div id="container">
         <header id="header">
@@ -146,11 +147,24 @@ ga('send', 'pageview');
             <table>
                 <tr>
                     
-                    <td><a href="https://www.linkedin.com/in/akmalmuqeeth" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></td>
                     
-                    <td><a href="https://github.com/akmalmuqeeth" target="_blank" title="github"><i class="fa fa-github"></i></a></td>
+                    <td>
+                        <a href="https://www.linkedin.com/in/akmalmuqeeth" target="_blank" title="linkedin" class=tooltip>
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </td>
                     
-                    <td><a href="https://twitter.com/akmalmuqeeth" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></td>
+                    <td>
+                        <a href="https://github.com/akmalmuqeeth" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://twitter.com/akmalmuqeeth" target="_blank" title="twitter" class=tooltip>
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
                     
                 </tr>
             </table>
@@ -164,7 +178,6 @@ ga('send', 'pageview');
     <div class="article-inner">
         
         
-        
             <header class="article-header">
                 
     
@@ -173,8 +186,9 @@ ga('send', 'pageview');
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2016/04/23/secrets-of-programming/">
@@ -183,15 +197,17 @@ ga('send', 'pageview');
     </div>
 
 
-                    
-                    
+                        
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/tags/point-by-point/">point by point</a>, <a class="tag-link" href="/tags/programming/">programming</a>
     </div>
 
-                </div>
+                    </div>
+                
             </header>
+        
         
         <div class="article-entry" itemprop="articleBody">
         
@@ -358,7 +374,7 @@ ga('send', 'pageview');
 </section>
             
                 <aside id="sidebar">
-    
+   
         
     <div class="widget-wrap">
         <h3 class="widget-title">recent</h3>
@@ -374,6 +390,7 @@ ga('send', 'pageview');
         <span style="background-image:url(http://res.cloudinary.com/dwdy6qx55/image/upload/s--lf54pHlQ--/v1479338615/Mentor-2_akxbo9.jpg)" alt="Review - Mentor Based Programming Training" class="thumbnail-image"></span>
     
 </a>
+
                         </div>
                         
                         <div class="item-inner">
@@ -392,6 +409,7 @@ ga('send', 'pageview');
         <span style="background-image:url(http://res.cloudinary.com/dwdy6qx55/image/upload/s--ZqocSSJJ--/v1478907358/React.js_logo.svg_gdmu0f.png)" alt="Why do I need to write HTML inside React code? Nope, you don&#39;t!" class="thumbnail-image"></span>
     
 </a>
+
                         </div>
                         
                         <div class="item-inner">
@@ -410,6 +428,7 @@ ga('send', 'pageview');
         <span style="background-image:url(http://res.cloudinary.com/dwdy6qx55/image/upload/v1468450718/programming_training_ywppeo.png)" alt="Review - Programming Training Resources (paid)" class="thumbnail-image"></span>
     
 </a>
+
                         </div>
                         
                         <div class="item-inner">
@@ -428,6 +447,7 @@ ga('send', 'pageview');
         <span style="background-image:url(http://res.cloudinary.com/dwdy6qx55/image/upload/v1462924688/programmer_rzn5wm.jpg)" alt="Best kept secrets of programmers" class="thumbnail-image"></span>
     
 </a>
+
                         </div>
                         
                         <div class="item-inner">
@@ -446,6 +466,7 @@ ga('send', 'pageview');
         <span style="background-image:url(http://res.cloudinary.com/dwdy6qx55/image/upload/v1461277263/project_mgmt_hbvln1.jpg)" alt="Point by Point - Scrum Vs Kanban" class="thumbnail-image"></span>
     
 </a>
+
                         </div>
                         
                         <div class="item-inner">
@@ -501,7 +522,7 @@ ga('send', 'pageview');
 
 
     
-    <div id="toTop" class="fa fa-chevron-up"></div>
+    <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
             
         </div>
@@ -516,25 +537,25 @@ ga('send', 'pageview');
         
     
     <script>
-    var disqus_shortname = 'hexo-theme-icarus';
-    
-    
-    var disqus_url = 'http://akmalmuqeeth.com/2016/04/23/secrets-of-programming/';
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    var disqus_config = function () {
+        
+            this.page.url = 'http://akmalmuqeeth.com/2016/04/23/secrets-of-programming/';
+        
+        this.page.identifier = 'secrets-of-programming';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
-    </script>
+</script>
 
 
 
     
-        <script src="/vendor/fancybox/jquery.fancybox.pack.js"></script>
     
+
 
 
 <!-- Custom Scripts -->
